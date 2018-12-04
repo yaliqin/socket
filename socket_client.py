@@ -13,3 +13,4 @@ def socket_client():
         print(data)
 
         #s.close()
+socket_client()
