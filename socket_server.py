@@ -2,7 +2,7 @@ def socket_server():
     import socket
     import time
 
-    HOST = '192.168.1.135'
+    HOST = '192.168.1.35'
     PORT = 8001
 
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
