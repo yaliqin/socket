@@ -23,3 +23,5 @@ def socket_server():
             conn.send(b)
 
         #conn.close()
+
+socket_server()
