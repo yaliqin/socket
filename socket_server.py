@@ -1,5 +1,6 @@
 def socket_server():
     import socket
+    import time
 
     HOST = '192.168.1.135'
     PORT = 8001
@@ -13,7 +14,7 @@ def socket_server():
 
     while True:
         conn, addr = s.accept()
-        print('Connected by '+str(addr))
+        print('Connected by '+addr[0])
 
         while True:
             data = conn.recv(1024)
@@ -21,6 +22,7 @@ def socket_server():
             str ="server received you message."
             b = str.encode('utf-8')
             conn.send(b)
+            time.sleep(15.0)
 
         #conn.close()
 
